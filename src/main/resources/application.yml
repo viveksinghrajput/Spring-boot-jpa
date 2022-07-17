@@ -10,8 +10,8 @@ spring:
 spring:
   profiles: dev
   datasource:
-    driver-class-name: com.mysql.jdbc.Driver
-    password: admin
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: root
     url: jdbc:mysql://localhost:3306/dcbapp
     username: root
   jpa:
@@ -19,15 +19,15 @@ spring:
       ddl-auto: update
     show-sql: true
 welcome:
-  message: Welcome to Daily Code Buffer!!
+  message: Welcome to Spring boot application !!
 
 ---
 
 spring:
   profiles: qa
   datasource:
-    driver-class-name: com.mysql.jdbc.Driver
-    password: admin
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: root
     url: jdbc:mysql://localhost:3306/dcbapp_qa
     username: root
   jpa:
@@ -35,7 +35,7 @@ spring:
       ddl-auto: update
     show-sql: true
 welcome:
-  message: Welcome to Daily Code Buffer!!
+  message: Welcome to Spring boot application!!
 
 management:
   endpoints:
@@ -49,8 +49,8 @@ management:
 spring:
   profiles: prod
   datasource:
-    driver-class-name: com.mysql.jdbc.Driver
-    password: admin
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: root
     url: jdbc:mysql://localhost:3306/dcbapp_prod
     username: root
   jpa:
@@ -58,4 +58,4 @@ spring:
       ddl-auto: update
     show-sql: true
 welcome:
-  message: Welcome to Daily Code Buffer!!
+  message: Welcome to Spring boot application!!
